@@ -1,0 +1,67 @@
+python-telegram-bot==20.7
+python-dotenv
+matplotlib
+Pillow
+requests
+```
+
+---
+
+## 📋 QADAMMA-QADAM:
+
+### 1. Kursor joylashtirilganini tekshiring
+- Katta oq maydonda kursor miltillashi kerak
+- Agar yo'q bo'lsa, u yerga bir marta bosing
+
+### 2. Kutubxonalarni kiriting
+
+**Klaviaturada terib yozing** (yoki nusxalab joylang):
+```
+python-telegram-bot==20.7
+python-dotenv
+matplotlib
+Pillow
+requests
+```
+
+**Har bir kutubxona alohida qatorda!**
+
+### 3. Natija shunday ko'rinishi kerak:
+```
+1  python-telegram-bot==20.7
+2  python-dotenv
+3  matplotlib
+4  Pillow
+5  requests
+```
+
+### 4. Commit changes
+- O'ng yuqori burchakda yashil **Commit changes...** tugmasini bosing
+- Ochiladigan oynada yana **Commit changes** ni bosing
+
+✅ `requirements.txt` tayyor!
+
+---
+
+## 🔍 QAYSI KUTUBXONALAR KERAK?
+
+Sizning botingizda quyidagi fayllar bor edi:
+- `charts.py` → `matplotlib` kerak
+- `colors.py` → `Pillow` kerak
+- `debt_webapp.py` → `python-telegram-bot` kerak
+- `config.py` → `python-dotenv` kerak bo'lishi mumkin
+
+Agar botingiz ishlamasa, boshqa kutubxonalar ham kerak bo'lishi mumkin. Logs'da xato chiqsa, menga yuboring.
+
+---
+
+## ⏭️ KEYINGI QADAM: PROCFILE
+
+`requirements.txt` ni commit qilgandan keyin, **Procfile** yaratamiz:
+
+1. Asosiy sahifaga qayting (telegram-bot)
+2. **Add file** → **Create new file**
+3. Fayl nomi: `Procfile` (katta P, kengaytmasiz)
+4. Ichiga yozing:
+```
+worker: python __init__.py
